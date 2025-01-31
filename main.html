@@ -39,8 +39,12 @@
             color: gray;
         }
 
+        .btn-container {
+            display: flex;
+            gap: 15px; /* Adds spacing between buttons */
+        }
+
         .btn {
-            display: inline-block;
             padding: 10px 20px;
             font-size: 18px;
             font-weight: bold;
@@ -50,16 +54,18 @@
             border: none;
             border-radius: 5px;
             transition: background 0.3s;
-            margin: 10px;
         }
+
         .btn:hover {
             background-color: #0056b3;
         }
+
         .btn-outline {
             background: none;
             border: 2px solid #007BFF;
             color: #007BFF;
         }
+
         .btn-outline:hover {
             background-color: #007BFF;
             color: white;
@@ -70,9 +76,21 @@
     <div class="header">
         <h1>Math Games</h1>
     </div>
- <section>
-    <a href="DriftHunters.html" class="btn">Drift Hunters</a><br><a href="1v1LOL.html" class="btn">1v1 LOL</a><br><a href="SmashKarts.html" class="btn">SmashKarts</a>
- </section> 
+
+    <section class="btn-container">
+        <a href="DriftHunters.html" class="btn">Drift Hunters</a>
+        <a href="1v1LOL.html" class="btn btn-outline">1v1 LOL</a>
+        <a href="SmashKarts.html" class="btn btn-outline">SmashKarts</a>
+        <a href="OvO.html" class="btn">Ovo</a>
+    </section>
+    
+    <section class="btn-container">
+        <a href="DriftHunters.html" class="btn">Drift Hunters</a>
+        <a href="1v1LOL.html" class="btn btn-outline">1v1 LOL</a>
+        <a href="SmashKarts.html" class="btn btn-outline">SmashKarts</a>
+        <a href="OvO.html" class="btn">Ovo</a>
+    </section>
+
     <script>
         // Disable right-click function
         document.addEventListener('contextmenu', function(event) {
