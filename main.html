@@ -1,3 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disable Right-Click</title>
+    
+    <!-- Import Lexend font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Apply Lexend font and center text */
+        body {
+            font-family: 'Lexend', sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
 <a href="DriftHunters.html" class="button-class">Drift Hunters</a>
 <a href="1v1LOL.html" class="button-class">1v1 LOL</a>
 <a href="SmashKarts.html" class="button-class">SmashKarts</a>
+  
+    <script>
+        // Disable right-click function
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
